@@ -115,7 +115,7 @@ function addRandomFreelancers() {
     (accumulator, currentValue) => accumulator + currentValue
   );
   let avgPriceTotal = avgPriceSum / avgPriceArr.length
-  avgPriceTotal = Math.round(avgPriceTotal * 100) / 100
+  avgPriceTotal = Math.round(avgPriceTotal * 1000) / 1000
 
   avgPriceDisplay.innerHTML = `The average starting price is $${avgPriceTotal}.`
 
