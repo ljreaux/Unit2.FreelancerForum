@@ -68,7 +68,7 @@ function initialFreelancers() {
   let avgPriceTotal = avgPriceSum / avgPriceArr.length
   avgPriceTotal = Math.round(avgPriceTotal * 100) / 100
 
-  avgPriceDisplay.innerHTML = `The average starting price is $${avgPriceTotal}`
+  avgPriceDisplay.innerHTML = `The average starting price is $${avgPriceTotal}.`
 }
 
 initialFreelancers()
@@ -117,7 +117,7 @@ function addRandomFreelancers() {
   let avgPriceTotal = avgPriceSum / avgPriceArr.length
   avgPriceTotal = Math.round(avgPriceTotal * 100) / 100
 
-  avgPriceDisplay.innerHTML = `The average starting price is $${avgPriceTotal}`
+  avgPriceDisplay.innerHTML = `The average starting price is $${avgPriceTotal}.`
 
   // stops the function from continuing to run after 100 freelancers
   if (freelancers.length >= maxFreelancers) {
