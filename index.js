@@ -8,14 +8,20 @@ const avgPriceDisplay = document.querySelector('h2')
 const avgPriceArr = []
 
 // initial list of freelancers based off of the story provided
-const freelancers = [{ 'Name': 'Alice', 'Occupation': 'Writer', 'Starting Price': '30' }, { 'Name': 'Bob', 'Occupation': 'Teacher', 'Starting Price': '50' }, { 'Name': 'Carol', 'Occupation': 'Programer', 'Starting Price': '70' }
+const freelancers = [{ 'Name': 'Alice', 'Occupation': 'Writer', 'Starting Price': '30' }, 
+                     { 'Name': 'Bob', 'Occupation': 'Teacher', 'Starting Price': '50' }, 
+                     { 'Name': 'Carol', 'Occupation': 'Programer', 'Starting Price': '70' }
 ]
 
 // a somewhat large list of randomly generated names to iterate through
-const names = ['Jeff', 'Susie', 'Larry', 'Timmy', 'Elisabeth', 'Karolina', 'Xiomara', 'Devon', 'Kendal', 'Shaila', 'Denis', 'Konrad', 'Jerry', 'Elam', 'Kollin', 'Averi', 'Shaila', 'Kenya', 'Zoya', 'Nathaly', 'Aryeh', 'Alonso', 'Cielo', 'Ramona', 'Jacques', 'Kassidy', 'Aleyah', 'Kacey', 'Kaila', 'Faigy', 'Karl', 'Zaida', 'Jenna', 'Shamar', 'Peighton']
+const names = ['Jeff', 'Susie', 'Larry', 'Timmy', 'Elisabeth', 'Karolina', 'Xiomara', 'Devon', 'Kendal', 'Shaila', 
+               'Denis', 'Konrad', 'Jerry', 'Elam', 'Kollin', 'Averi', 'Shaila', 'Kenya', 'Zoya', 'Nathaly', 'Aryeh', 
+               'Alonso', 'Cielo', 'Ramona', 'Jacques', 'Kassidy', 'Aleyah', 'Kacey', 'Kaila', 'Faigy', 'Karl', 'Zaida', 
+               'Jenna', 'Shamar', 'Peighton']
 
 // a list of jobs to randomly iterate through
-const jobs = ['Teacher', 'Artist', 'Writer', 'Programer', 'Translator', 'Consultant', 'Copywriter', 'Designer', 'Captioner', 'Social Media Manager', 'Driver', 'Tutor', 'Photographer', '3D Artist', 'Legal Advisor', 'HR Manager']
+const jobs = ['Teacher', 'Artist', 'Writer', 'Programer', 'Translator', 'Consultant', 'Copywriter', 'Designer', 'Captioner', 
+              'Social Media Manager', 'Driver', 'Tutor', 'Photographer', '3D Artist', 'Legal Advisor', 'HR Manager']
 
 // list of prices from 30-200 by 5s
 const prices = []
